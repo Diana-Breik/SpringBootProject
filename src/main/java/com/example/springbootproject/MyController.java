@@ -17,6 +17,10 @@ public class MyController {
         return "Hello, " + name + "!";
     }
 
-  
+    @PostMapping()
+    public String printBody(@RequestBody String body){
+      return "the body: " + body;
+    }
+
 
 }
